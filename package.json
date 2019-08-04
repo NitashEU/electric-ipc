@@ -2,6 +2,20 @@
   "name": "electric-ipc",
   "description": "IPC Helper for electron.js",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NitashEU/electric-ipc"
+  },
+  "author": "Ferhat Sayan <nitashsy@gmail.com>",
+  "keywords": [
+    "electron",
+    "ipc"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NitashEU/electric-ipc/issues"
+  },
+  "homepage": "https://github.com/NitashEU/electric-ipc",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
