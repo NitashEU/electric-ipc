@@ -39,8 +39,8 @@ steps:
     inputs:    
       SourceFolder: '$(Build.SourcesDirectory)'
       Contents: |
-        'dist/**/*'
-        'package.json'
+        dist/**/*
+        package.json
       TargetFolder: '$(Build.ArtifactStagingDirectory)'
     displayName: 'Copy build to artifacts'
 
