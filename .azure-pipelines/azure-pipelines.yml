@@ -5,6 +5,7 @@
 
 trigger:
   - develop
+  - master
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -37,16 +38,12 @@ steps:
   - task: CopyFiles@2
     inputs:
       SourceFolder: 'dist'
-      Contents: '**'
-      TargetFolder: '$(Build.ArtifactStagingDirectory)/dist'
-    displayName: 'copy dist folder to artifacts'
-
-  - task: CopyFiles@2
-    inputs:
-      Contents: 'package.json'
+      Contents: 
+        - '**'
+        - 'package.json'
       TargetFolder: '$(Build.ArtifactStagingDirectory)'
-    displayName: 'copy package.json to artifacts'
-    
+    displayName: 'Copy build to artifacts'
+
   - task: PublishBuildArtifacts@1
     inputs:
       PathtoPublish: '$(Build.ArtifactStagingDirectory)'
