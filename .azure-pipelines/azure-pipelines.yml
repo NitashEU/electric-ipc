@@ -37,10 +37,9 @@ steps:
 
   - task: CopyFiles@2
     inputs:
-      SourceFolder: 'dist'
-      Contents: 
-        - '**'
-        - 'package.json'
+      Contents: |
+        'dist/**/*'
+        'package.json'
       TargetFolder: '$(Build.ArtifactStagingDirectory)'
     displayName: 'Copy build to artifacts'
 
