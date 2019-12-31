@@ -34,7 +34,9 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "uuid": "^3.3.3"
+  },
   "devDependencies": {
     "@types/node": "12.6.9",
     "electron": "7.1.7",
