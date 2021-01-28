@@ -37,7 +37,7 @@
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^10.14.5",
-    "electron": "^6.0.0",
+    "electron": "^9.4.0",
     "prettier": "1.16.2",
     "pretty-quick": "^1.10.0",
     "ts-node": "^8.1.0",
